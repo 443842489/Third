@@ -57,14 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		99978ECE1EC942C900EA24EB /* BaseUrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseUrl.h; sourceTree = "<group>"; };
-		99978ECF1EC942C900EA24EB /* CellDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellDelegate.h; sourceTree = "<group>"; };
-		99978ED01EC942C900EA24EB /* CellSetDataDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellSetDataDelegate.h; sourceTree = "<group>"; };
 		99978ED11EC942C900EA24EB /* ConstantDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantDefine.h; sourceTree = "<group>"; };
-		99978ED21EC942C900EA24EB /* Enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enums.h; sourceTree = "<group>"; };
-		99978ED31EC942C900EA24EB /* SmarketPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmarketPrefixHeader.pch; sourceTree = "<group>"; };
-		99978ED41EC942C900EA24EB /* SWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWidget.h; sourceTree = "<group>"; };
-		99978ED51EC942C900EA24EB /* ViewPassValueDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewPassValueDelegate.h; sourceTree = "<group>"; };
 		99978ED71EC942C900EA24EB /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		99978ED81EC942C900EA24EB /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		99978ED91EC942C900EA24EB /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
@@ -154,14 +147,7 @@
 		99978ECD1EC942C900EA24EB /* Macro */ = {
 			isa = PBXGroup;
 			children = (
-				99978ECE1EC942C900EA24EB /* BaseUrl.h */,
-				99978ECF1EC942C900EA24EB /* CellDelegate.h */,
-				99978ED01EC942C900EA24EB /* CellSetDataDelegate.h */,
 				99978ED11EC942C900EA24EB /* ConstantDefine.h */,
-				99978ED21EC942C900EA24EB /* Enums.h */,
-				99978ED31EC942C900EA24EB /* SmarketPrefixHeader.pch */,
-				99978ED41EC942C900EA24EB /* SWidget.h */,
-				99978ED51EC942C900EA24EB /* ViewPassValueDelegate.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
