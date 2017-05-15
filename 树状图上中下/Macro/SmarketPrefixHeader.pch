@@ -1,0 +1,35 @@
+//
+//  SmarketPrefixHeader.pch
+//  smarket
+//
+//  Created by che on 16/10/31.
+//  Copyright © 2016年 tlg. All rights reserved.
+//
+
+#ifndef SmarketPrefixHeader_pch
+#define SmarketPrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "AFNetworking.h"
+#import "Masonry.h"
+#import "MBProgressHUD.h"
+#import "MJRefresh/MJRefresh.h"
+#import "BaseUrl.h"
+#import "BaseRequest.h"
+#import "SUtils.h"
+#import "SKeyChain.h"
+#import "SWidget.h"
+#import "DataSource.h"
+#import "ModelDateSource.h"
+#import "BaseTableCell.h"
+#import "BaseCollectionCell.h"
+#import "CellHeadFootModel.h"
+#import "TableHeadView.h"
+#import "TableFootView.h"
+#import <objc/runtime.h> 
+#import "UIView+Extension.h"
+#import "UserInfo.h"
+#import "UIAlertControllerTool.h"
+
+#endif /* SmarketPrefixHeader_pch */

@@ -1,0 +1,28 @@
+1.基本单元：MemberRectView
+    请看图 1.png
+    图 1.png  中的黑色框选区就是组成树状图的基本单元：MemberRectView，它包含一个白色视图和白色视图上下两端的竖向线条。黑色框选区四周的红色区域，左右宽度都为XSpace/2，上下高度都为YSpace/2，这是子辈分支数<=1时的宽度，而高度是固定的HeadHeight+YSpace。
+
+    白色视图是MyMemberView，它包含显示人物头像的imageView 和显示人物姓名的label。MyMemberView的大小是根据宏定义的HeadWidth 和HeadHeight 决定的。头像imageView宽高都是HeadWidth。人物姓名的label宽HeadWidth，高25,HeadHeight=HeadWidth+25。
+
+2.基本单元MemberRectView的大小
+    MemberRectView的高度是固定的，即显示人物信息的白色矩形区高度HeadHeight+上边红色区域YSpace/2+下边红色区域YSpace/2,即高度固定为HeadHeight+YSpace。
+
+    MemberRectView的宽度是动态的，当 该MemberRectView的子辈分支数<=1时，宽度 为HeadWidth+XSpace。如图1.png 的黑色框选区
+    当 该MemberRectView的子辈分支数>1时
+    请看图 2.png 及 3.png
+    MemberRectView的宽度是 model.children.count*HeadWidth+(model.children.count-1)*XSpace
+
+    请看图 4.png
+    MemberRectView的宽度通过递归获取，从最后一层分支获取宽度，M111 和 M112的宽度。再往内层递加：M111的宽度+M112的宽度=N11 的宽度。N11的宽度+N12的宽度+N13的宽度=P1的宽度。
+
+3.连线
+    树状图中的短竖线都封装到基本单元MemberRectView中了，不用管，而连接短竖线的横线需要根据该MemberRectView关联的model，从该model.children中第一个字辈的MemberRectView的X方向中心坐标topX 和 model.children中最后一个子辈的MemberRectView的X方向中心坐标bottomX 来确定横线位置。
+    注：一定要MemberRectView的X方向中心坐标，因为MemberRectView的宽度是根据子辈数量变化的
+
+    横线坐标即为 （topX ，y-0.5）  其中y为改MemberRectView的左上角顶点y坐标， -0.5是因为线的高度为1。横线的frame为：CGRectMake(topX, y-0.5,bottomX-topX, 1)
+
+    请看图 5.png
+    基本单元MemberRectView P1的子辈横线AB，其中A的X坐标为P1的第一个子辈N11的中心X坐标，B点的X坐标P1 的最后一个子类N13的中心X坐标，A 和 B的X坐标之差为AB的长度， A 和 B的Y坐标为P1的左上角顶点的Y坐标-0.5。
+
+    将基本单元 和 横线 添加到UIScrollView上 即可。
+
